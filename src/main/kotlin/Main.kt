@@ -12,22 +12,16 @@ fun extractValue(input: String, key: String) : String {
     var spase1 = ""
     for (space in spases) {
         spase1=space.trim()
-        for (key in spase1){
+        println(spase1)
+        for (input in spase1){
             val input1=readLine()?:"".lowercase()
-             if (input1.equals(key)){ return input1 }
-            else { null } }
+             if (input1.equals(input)){ return key }
+            else { null }
+        }
  }
     return spase1
 
-
-
-
-
-
 }
-
-
-
 
 fun main() {
 
@@ -35,10 +29,7 @@ fun main() {
         userId: user-123; role: admin;
         authToken: token-XYZ-789 ;
         environment : production; expiry: 1672531199  """
-       println("entre the vale")
-   // val input1=readLine()?:""
-   // extractValue(input1,config)
-    println(extractValue(config,"role"))
+     println(println(extractValue(config,"role")))
 
 
 
