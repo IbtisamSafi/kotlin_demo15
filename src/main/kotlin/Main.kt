@@ -20,6 +20,10 @@ fun extractValue(input: String, key: String) : String {
     return spase1
 
 
+
+
+
+
 }
 
 
@@ -31,7 +35,7 @@ fun main() {
         userId: user-123; role: admin;
         authToken: token-XYZ-789 ;
         environment : production; expiry: 1672531199  """
-   // println("entre the vale")
+       println("entre the vale")
    // val input1=readLine()?:""
    // extractValue(input1,config)
     println(extractValue(config,"role"))
